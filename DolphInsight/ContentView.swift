@@ -15,6 +15,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, Guys!")
             Text("Hello, bang!")
+            Text("Hello")
         }
         .padding()
     }
