@@ -14,6 +14,10 @@
 		82B11FBE2C00CEE200AA312D /* DolphInsightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FBD2C00CEE200AA312D /* DolphInsightTests.swift */; };
 		82B11FC82C00CEE200AA312D /* DolphInsightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FC72C00CEE200AA312D /* DolphInsightUITests.swift */; };
 		82B11FCA2C00CEE200AA312D /* DolphInsightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FC92C00CEE200AA312D /* DolphInsightUITestsLaunchTests.swift */; };
+		82B11FFB2C03206600AA312D /* goalsDataScientist.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FF82C03206600AA312D /* goalsDataScientist.mlmodel */; };
+		82B11FFC2C03206600AA312D /* goalsSoftwareEngineer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FF92C03206600AA312D /* goalsSoftwareEngineer.mlmodel */; };
+		82B11FFD2C03206600AA312D /* modeltaggerml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FFA2C03206600AA312D /* modeltaggerml.mlmodel */; };
+		82B11FFF2C03207600AA312D /* CoreMLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11FFE2C03207600AA312D /* CoreMLNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		82B11FC32C00CEE200AA312D /* DolphInsightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DolphInsightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B11FC72C00CEE200AA312D /* DolphInsightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolphInsightUITests.swift; sourceTree = "<group>"; };
 		82B11FC92C00CEE200AA312D /* DolphInsightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolphInsightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82B11FF82C03206600AA312D /* goalsDataScientist.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = goalsDataScientist.mlmodel; sourceTree = "<group>"; };
+		82B11FF92C03206600AA312D /* goalsSoftwareEngineer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = goalsSoftwareEngineer.mlmodel; sourceTree = "<group>"; };
+		82B11FFA2C03206600AA312D /* modeltaggerml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = modeltaggerml.mlmodel; sourceTree = "<group>"; };
+		82B11FFE2C03207600AA312D /* CoreMLNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		82B11FAB2C00CEE000AA312D /* DolphInsight */ = {
 			isa = PBXGroup;
 			children = (
+				82B11FF72C03204000AA312D /* View */,
+				82B11FF32C031FB200AA312D /* Model */,
+				82B11FEF2C031F7400AA312D /* components */,
 				82B11FAC2C00CEE000AA312D /* DolphInsightApp.swift */,
 				82B11FAE2C00CEE000AA312D /* ContentView.swift */,
 				82B11FB02C00CEE200AA312D /* Assets.xcassets */,
@@ -125,6 +136,55 @@
 				82B11FC92C00CEE200AA312D /* DolphInsightUITestsLaunchTests.swift */,
 			);
 			path = DolphInsightUITests;
+			sourceTree = "<group>";
+		};
+		82B11FEF2C031F7400AA312D /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		82B11FF02C031F8000AA312D /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				82B11FF22C031F9D00AA312D /* CoreMLModel */,
+				82B11FF12C031F8C00AA312D /* CoreMLNavigation */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		82B11FF12C031F8C00AA312D /* CoreMLNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				82B11FFE2C03207600AA312D /* CoreMLNavigation.swift */,
+			);
+			path = CoreMLNavigation;
+			sourceTree = "<group>";
+		};
+		82B11FF22C031F9D00AA312D /* CoreMLModel */ = {
+			isa = PBXGroup;
+			children = (
+				82B11FF82C03206600AA312D /* goalsDataScientist.mlmodel */,
+				82B11FF92C03206600AA312D /* goalsSoftwareEngineer.mlmodel */,
+				82B11FFA2C03206600AA312D /* modeltaggerml.mlmodel */,
+			);
+			path = CoreMLModel;
+			sourceTree = "<group>";
+		};
+		82B11FF32C031FB200AA312D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82B11FF02C031F8000AA312D /* CoreML */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82B11FF72C03204000AA312D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B11FAF2C00CEE000AA312D /* ContentView.swift in Sources */,
+				82B11FFF2C03207600AA312D /* CoreMLNavigation.swift in Sources */,
+				82B11FFB2C03206600AA312D /* goalsDataScientist.mlmodel in Sources */,
 				82B11FAD2C00CEE000AA312D /* DolphInsightApp.swift in Sources */,
+				82B11FFC2C03206600AA312D /* goalsSoftwareEngineer.mlmodel in Sources */,
+				82B11FFD2C03206600AA312D /* modeltaggerml.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
